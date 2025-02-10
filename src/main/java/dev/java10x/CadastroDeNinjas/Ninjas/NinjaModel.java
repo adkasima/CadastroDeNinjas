@@ -2,10 +2,16 @@ package dev.java10x.CadastroDeNinjas.Ninjas;
 
 import dev.java10x.CadastroDeNinjas.Missoes.MissionsModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 //Entity transforma uma classe em uma Entidade no banco de dados
 @Entity
 @Table(name = "tb_ninjas")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class NinjaModel {
 
     @Id
