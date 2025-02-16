@@ -17,8 +17,15 @@ public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
+
+    @Column(unique = true)
     private String email;
+
+    @Column(name = "img_url")
+    private String imgUrl;
+
     private int idade;
 
     //@ManyToOne: Ninjas podem ter apenas uma única missão.
