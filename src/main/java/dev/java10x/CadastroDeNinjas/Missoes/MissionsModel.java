@@ -20,7 +20,7 @@ public class MissionsModel {
     private MissionRankEnum dificuldade;
 
     //@OneToMany: Uma missão pode ter vários Ninjas.
-    @OneToMany (mappedBy = "missoes")
+    @OneToMany (mappedBy = "missao")
     private List<NinjaModel> ninjas;
 
 }
