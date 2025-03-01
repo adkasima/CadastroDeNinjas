@@ -26,6 +26,7 @@ public class NinjaModel {
     @Column(name = "img_url")
     private String imgUrl;
 
+    @Column (name = "idade")
     private int idade;
 
     //@ManyToOne: Ninjas podem ter apenas uma única missão.
