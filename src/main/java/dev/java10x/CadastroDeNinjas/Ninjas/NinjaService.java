@@ -21,13 +21,18 @@ public class NinjaService {
 
     }
 
+    //Deletar Ninja
+    public void deleteNinjaById(Long id) {
+        ninjaRepository.deleteById(id);
+    }
+
     //Listar todos os ninjas
     public List<NinjaModel> listNinjas() {
         return ninjaRepository.findAll();
     }
 
     //Listar ninja por ID
-    public NinjaModel listNinjaByID(Long id) {
+    public NinjaModel listNinjaById(Long id) {
         Optional<NinjaModel> ninjaByID = ninjaRepository.findById(id);
         return ninjaByID.orElse(null);
     }
