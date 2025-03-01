@@ -17,7 +17,6 @@ public class MissionService {
     //Criar Missão
     public MissionsModel createMission(MissionsModel mission) {
         return missionRepository.save(mission);
-
     }
 
     //Deletar Missão
@@ -34,5 +33,14 @@ public class MissionService {
     public MissionsModel listMissionById(Long id) {
         Optional<MissionsModel> missionById = missionRepository.findById(id);
         return missionById.orElse(null);
+    }
+
+    //Atualizar Missão
+    public MissionsModel updateMission(Long id, MissionsModel updatedMission) {
+        if(missionRepository.existsById(id)) {
+            updatedMission.setId(id);
+            missionRepository.save(updatedMission);
+        }
+        return null;
     }
 }
