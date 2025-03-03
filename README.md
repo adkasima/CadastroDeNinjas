@@ -35,7 +35,7 @@ O esquema do banco de dados segue as seguintes relações:
 * Ninja: Contém atributos como id, nome, idade, email e rank.
 
 ## Configuração
-* Clone o repositório: git clone https://github.com/horaciomuller/CadastroDeNinjas.git
+* Clone o repositório: git clone git@github.com:adkasima/CadastroDeNinjas.git
 * Navegue até o diretório do projeto: cd CadastroDeNinjas
 * Construa o projeto: mvn clean install
 * Execute a aplicação: mvn spring-boot:run
