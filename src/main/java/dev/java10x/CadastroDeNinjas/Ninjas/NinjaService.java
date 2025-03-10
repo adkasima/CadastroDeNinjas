@@ -44,9 +44,9 @@ public class NinjaService {
 
     //Atualizar Ninja
     public NinjaDTO updateNinja(Long id, NinjaDTO ninjaDTO) {
-        Optional<NinjaModel> ninjaToDelete = ninjaRepository.findById(id);
+        Optional<NinjaModel> ninjaToUpdate = ninjaRepository.findById(id);
 
-        if (ninjaToDelete.isPresent()) {
+        if (ninjaToUpdate.isPresent()) {
             NinjaModel updatedNinja = ninjaMapper.map(ninjaDTO);
             updatedNinja.setId(id);
             NinjaModel savedNinja = ninjaRepository.save(updatedNinja);
