@@ -1,8 +1,8 @@
 package dev.java10x.CadastroDeNinjas.Ninjas;
 
-import jakarta.persistence.Id;
+import dev.java10x.CadastroDeNinjas.Ninjas.dtos.NinjaDTO;
+import dev.java10x.CadastroDeNinjas.Ninjas.mapper.NinjaMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.Optional;

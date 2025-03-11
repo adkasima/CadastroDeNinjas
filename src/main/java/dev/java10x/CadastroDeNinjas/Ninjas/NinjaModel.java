@@ -1,6 +1,6 @@
 package dev.java10x.CadastroDeNinjas.Ninjas;
 
-import dev.java10x.CadastroDeNinjas.Missoes.MissionsModel;
+import dev.java10x.CadastroDeNinjas.Missoes.MissionModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -35,6 +35,6 @@ public class NinjaModel {
     //@ManyToOne: Ninjas podem ter apenas uma única missão.
     @ManyToOne
     @JoinColumn(name = "missoes_id") //Foreign Key ou Chave estrangeira
-    private MissionsModel missao;
+    private MissionModel missao;
 
 }

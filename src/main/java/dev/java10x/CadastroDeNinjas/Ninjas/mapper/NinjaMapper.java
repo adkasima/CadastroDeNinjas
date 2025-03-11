@@ -1,5 +1,7 @@
-package dev.java10x.CadastroDeNinjas.Ninjas;
+package dev.java10x.CadastroDeNinjas.Ninjas.mapper;
 
+import dev.java10x.CadastroDeNinjas.Ninjas.NinjaModel;
+import dev.java10x.CadastroDeNinjas.Ninjas.dtos.NinjaDTO;
 import org.springframework.stereotype.Component;
 
 @Component
