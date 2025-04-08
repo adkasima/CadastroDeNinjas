@@ -40,3 +40,4 @@ O esquema do banco de dados segue as seguintes relações:
 * Construa o projeto: mvn clean install
 * Execute a aplicação: mvn spring-boot:run
 * Acesse a aplicação em http://localhost:8080
+* Acesse a documentação da aplicação em http://localhost:8080/swagger-ui/index.html
